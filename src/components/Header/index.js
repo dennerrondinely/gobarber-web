@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Notification from '~/components/Notifications';
+
 import { Container, Content, Profile } from './styles';
 
 import logo from '~/assets/logo-purple.svg';
@@ -15,13 +17,14 @@ export default function Header() {
         </nav>
 
         <aside>
+          <Notification />
           <Profile>
             <div>
               <strong>Denner</strong>
               <Link to="/profile">Meu Perfil</Link>
             </div>
             <img
-              src="https://api.adorable.io/avatars/50/abott@adorable.png"
+              src="https://api.adorable.io/avatars/50/abott@adorable.pngyarn start"
               alt="Denner"
             />
           </Profile>
